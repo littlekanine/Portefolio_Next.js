@@ -1,0 +1,227 @@
+// Animate button about
+
+.animated-button {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	padding: 16px 36px;
+	border: 4px solid;
+	border-color: transparent;
+	font-size: 16px;
+	background-color: inherit;
+	border-radius: 100px;
+	font-weight: 600;
+	color: black;
+	box-shadow: 0 0 0 2px black;
+	cursor: pointer;
+	overflow: hidden;
+	transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+	animation: button 2s forwards;
+	animation-delay: 1s;
+	opacity: 0;
+	svg {
+		position: absolute;
+		width: 24px;
+		fill: black;
+		z-index: 9;
+		transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+	}
+
+	.arr-1 {
+		right: 16px;
+	}
+
+	.arr-2 {
+		left: -25%;
+		transform: rotate(90deg);
+	}
+
+	.enveloppe {
+		left: -25%;
+	}
+
+	.moon {
+		position: none !important;
+		height: 20px;
+	}
+
+	.sun {
+	}
+
+	.circle {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 20px;
+		height: 20px;
+		background-color: #f7df1e;
+		border-radius: 50%;
+		opacity: 0;
+		transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+	}
+
+	.text {
+		position: relative;
+		z-index: 1;
+		transform: translateX(-12px);
+		transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+	}
+
+	&:hover {
+		box-shadow: 0 0 0 12px transparent;
+		color: #212121;
+		border-radius: 12px;
+
+		.arr-1 {
+			right: -25%;
+		}
+
+		.arr-2 {
+			left: 16px;
+		}
+
+		.enveloppe {
+			left: 16px;
+		}
+
+		.text {
+			transform: translateX(12px);
+		}
+
+		svg {
+			fill: #212121;
+		}
+
+		.circle {
+			width: 220px;
+			height: 220px;
+			opacity: 1;
+		}
+	}
+
+	&:active {
+		scale: 0.95;
+		box-shadow: 0 0 0 4px #f7df1e;
+	}
+}
+
+@keyframes button {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+// animate button view more
+
+/* Call to Action Button */
+.cta-btn {
+	display: inline-block;
+	position: relative;
+	padding: 0.8rem $default-font-size;
+	font-weight: bold;
+	line-height: 1;
+	z-index: 1;
+	transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+	color: black;
+
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 0px;
+		height: 100%;
+		left: 0;
+		bottom: 0;
+		z-index: -1;
+		transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+	}
+}
+
+/* Hero Style */
+.cta-btn--hero {
+	@include supportColorForIE11();
+	border-width: 2px;
+	border-style: solid;
+	-moz-border-image: -moz-linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+	-webkit-border-image: -webkit-linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+	border-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+	-webkit-border-image-slice: 1;
+	border-image-slice: 1;
+	@include supportIE11() {
+		color: $secondary-color !important;
+		&:hover {
+			color: $white-color !important;
+		}
+	}
+
+	@include respond(phone) {
+		background-image: none;
+		border: 2px solid $secondary-color;
+		-webkit-text-fill-color: $secondary-color;
+	}
+
+	&::after {
+		background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+
+		@include respond(phone) {
+			background-image: none;
+		}
+	}
+
+	&:hover {
+		-webkit-text-fill-color: $white-color;
+		text-decoration: none;
+
+		@include respond(phone) {
+			-webkit-text-fill-color: $secondary-color;
+		}
+
+		&::after {
+			width: 100%;
+		}
+	}
+}
+
+/* Resume Style */
+.cta-btn--resume {
+	color: $white-color;
+	border: 2px solid $white-color;
+
+	&::after {
+		background: $white-color;
+	}
+
+	&:hover {
+		color: $secondary-color;
+		text-decoration: none;
+		&::after {
+			width: 100%;
+		}
+	}
+}
+
+/* Arrow Button */
+.up i {
+	color: #272727;
+}
+
+.dark-mode .animated-button {
+	box-shadow: 0 0 0 2px white !important;
+}
+
+.dark-mode .animated-button:hover {
+	box-shadow: none !important;
+	color: black !important;
+	& svg {
+		fill: black !important;
+	}
+}
+
+.dark-mode .animated-button svg {
+	fill: #f0f0f0;
+}
