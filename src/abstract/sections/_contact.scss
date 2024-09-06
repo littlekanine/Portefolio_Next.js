@@ -1,0 +1,35 @@
+#contact {
+	background-color: $primary-color;
+	margin-bottom: -1px;
+	color: $white-color;
+	padding-bottom: 50px;
+
+	@include respond(tab-land) {
+		padding-bottom: 5rem;
+		clip-path: none;
+		margin-top: 0;
+		-webkit-clip-path: none;
+	}
+	@media (max-width: 768px) {
+		padding: 2rem 0;
+	}
+
+	.contact-wrapper {
+		// margin-top: 3.2rem;
+		padding: 0 2rem;
+		backface-visibility: hidden;
+
+		&__text {
+			margin-bottom: 2.5rem;
+		}
+
+		&__text,
+		a {
+			font-size: 2.4rem;
+
+			@include respond(phone) {
+				font-size: 2rem;
+			}
+		}
+	}
+}

@@ -1,5 +1,6 @@
+"use client"
+
 import React, { useEffect } from 'react';
-import Pdp from '../../asset/img/mwa.jpg';
 
 function About({ darkMode }) {
 	useEffect(() => {
@@ -13,7 +14,7 @@ function About({ darkMode }) {
 					<div className="row about-wrapper">
 						<div className="col-md-6 col-sm-12 img-about">
 							<div className="about-wrapper__image load-hidden">
-								<img src={Pdp} alt="Elia Kopff" className="img-fluid rounded shadow-lg" />
+								{/* <img src={Pdp} alt="Elia Kopff" className="img-fluid rounded shadow-lg" /> */}
 							</div>
 						</div>
 						<div className="col-md-6 col-sm-12">

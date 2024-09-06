@@ -14,9 +14,11 @@
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "bootstrap": "^5.3.3",
     "next-google-fonts": "^2.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-responsive": "^10.0.0",
     "sass": "^1.78.0",
     "scrollreveal": "^4.0.9"
   },
