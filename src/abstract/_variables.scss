@@ -49,6 +49,10 @@ body,
 	opacity: 0;
 }
 
+.pointerEvents{
+	pointer-events: none
+}
+
 h2 {
 	font-size: 16px;
 	font-weight: bold;
