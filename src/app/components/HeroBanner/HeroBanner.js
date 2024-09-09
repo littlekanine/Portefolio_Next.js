@@ -1,6 +1,3 @@
-
-// "use client";
-// import React from 'react';
 import { Moon, Sun, ArrowLeft, ArrowRight } from '../svgcomponent/SvgComponent.js';
 import Buttons from '../buttons/index.js';
 

@@ -1,6 +1,4 @@
 "use client";
-import { useEffect } from "react";
-// import initScrollReveal from "../scripts/scrollReveal";
 import Herro from "./components/HeroBanner/HeroBanner";
 import About from "./components/about/About";
 import ContactForm from "./components/contactForm/ContactForm";
@@ -10,10 +8,6 @@ import Footer from "./components/footer/Footer";
 import useDarkMode from "../scripts/darkMode";
 
 function Home() {
-    // useEffect(() => {
-    //     initScrollReveal();
-    // }, []);
-
     const [darkMode, toggleDarkMode] = useDarkMode();
 
     return (
