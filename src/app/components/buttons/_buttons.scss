@@ -37,6 +37,10 @@
 		transform: rotate(90deg);
 	}
 
+	.contactSvg {
+		left: -25%;
+	}
+
 	.enveloppe {
 		left: -25%;
 	}
@@ -44,9 +48,6 @@
 	.moon {
 		position: none !important;
 		height: 20px;
-	}
-
-	.sun {
 	}
 
 	.circle {
@@ -212,6 +213,7 @@
 
 .dark-mode .animated-button {
 	box-shadow: 0 0 0 2px white !important;
+	color: white !important;
 }
 
 .dark-mode .animated-button:hover {

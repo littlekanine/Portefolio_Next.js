@@ -1,5 +1,6 @@
 import { Moon, Sun, ArrowLeft, ArrowRight } from '../svgcomponent/SvgComponent.js';
 import Buttons from '../buttons/index.js';
+import NavBar from '../navBar/NavBar.js';
 
 function Herro({ darkMode, toggleDarkMode }) {
 	return (
@@ -18,11 +19,12 @@ function Herro({ darkMode, toggleDarkMode }) {
 						<br />
 						I'm a Web Developer.
 					</h1>
-					<div className="hero-cta load-hidden">
+					{/* <div className="hero-cta load-hidden">
 						<a rel="noreferrer" className={`animated-button ${darkMode ? 'dark-mode' : ''}`} href="#about">
 							<Buttons message={'Know more'} SvgLeft={ArrowLeft} SvgRight={ArrowRight} darkMode={darkMode} />
 						</a>
-					</div>
+					</div> */}
+					<NavBar />
 				</div>
 			</section>
 		</div>
