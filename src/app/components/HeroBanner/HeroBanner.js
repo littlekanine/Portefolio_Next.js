@@ -19,11 +19,6 @@ function Herro({ darkMode, toggleDarkMode }) {
 						<br />
 						I'm a Web Developer.
 					</h1>
-					{/* <div className="hero-cta load-hidden">
-						<a rel="noreferrer" className={`animated-button ${darkMode ? 'dark-mode' : ''}`} href="#about">
-							<Buttons message={'Know more'} SvgLeft={ArrowLeft} SvgRight={ArrowRight} darkMode={darkMode} />
-						</a>
-					</div> */}
 					<NavBar />
 				</div>
 			</section>

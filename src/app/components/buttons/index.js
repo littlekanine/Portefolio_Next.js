@@ -1,6 +1,6 @@
 import React from "react";
 
-function Buttons({ message, SvgLeft, SvgRight, SvgEnvellope, SvgSun, SvgMoon, isToggle, darkMode, contactSvg }) {
+function Buttons({ message, SvgLeft, SvgRight, SvgEnvellope, SvgSun, SvgMoon, isToggle, darkMode, ContactSvg, FolderSvg, GitHubSvg, LinkedinSvg, TwitterSvg }) {
     return (
         <div className="flex center align-center">
             {SvgLeft && <SvgLeft className="arr-2" />}
@@ -10,7 +10,11 @@ function Buttons({ message, SvgLeft, SvgRight, SvgEnvellope, SvgSun, SvgMoon, is
             {SvgRight && <SvgRight className={`arr-1 ${darkMode ? "dark-mode" : ""}`} />}
             {SvgMoon && <SvgMoon className="moon flex center align-center" />}
             {SvgSun && <SvgSun className="sun" />}
-            {contactSvg && <contactSvg className="contactSvg" />}
+            {ContactSvg && <ContactSvg className="contactSvg" />}
+            {FolderSvg && <FolderSvg className="folderSvg" />}
+            {GitHubSvg && <GitHubSvg className="gitHubSvh" />}
+            {LinkedinSvg && <LinkedinSvg className="linkedinSvg" />}
+            {TwitterSvg && <TwitterSvg className="twitterSvg" />}
         </div>
     );
 }
