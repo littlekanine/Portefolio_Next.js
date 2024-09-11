@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
-import NavBar from "../navBar/NavBar";
+import NavBar from "../components/navBar/NavBar";
 
 function About({ darkMode }) {
     useEffect(() => {

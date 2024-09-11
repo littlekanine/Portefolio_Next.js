@@ -1,5 +1,5 @@
-import Buttons from '../buttons/index.js';
-import { ArrowRight, Enveloppe } from '../svgcomponent/SvgComponent.js';
+import Buttons from '../components/buttons/index';
+import { ArrowRight, Enveloppe } from '../components/svgcomponent/SvgComponent';
 
 function ContactForm() {
 	return (
