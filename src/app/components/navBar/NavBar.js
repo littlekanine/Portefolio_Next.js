@@ -3,9 +3,10 @@ import Buttons from "../buttons";
 import { ContactSvg, ArrowLeft, FolderSvg, GitHubSvg, LinkedinSvg, TwitterSvg } from "../svgcomponent/SvgComponent";
 
 const NavBar = ({ darkMode,isNotHome }) => {
+    const navBarStyle = isNotHome ? 'other-nav' : '';
     const buttonStyle = isNotHome ? 'other-button' : '';
     return (
-        <section id="navBar" className='flex center'>
+        <section id="navBar" className={`flex center ${navBarStyle}`}>
             <div className="navBar flex center align-center">
                 <div className="hero-cta load-hidden navLink flex center align-center">
                     <a rel="noreferrer" href="#project" className={`animated-button ${darkMode ? "dark-mode" : ""}${buttonStyle}`}>
