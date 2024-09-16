@@ -66,9 +66,9 @@ h2 {
 	display: none;
 }
 
-.visible {
-	display: block;
-}
+// .visible {
+// 	display: block;
+// }
 
 .width-full {
 	width: 100%;
@@ -80,6 +80,10 @@ h2 {
 
 .height80 {
 	height: 80%;
+}
+
+.height80vh {
+	height: 80vh;
 }
 
 .margin-top10 {
@@ -106,11 +110,17 @@ h2 {
 	pointer-events: none;
 	position: absolute;
 	width: 100%;
+	height: 100vh;
 	top: 0;
 	left: 0;
+	overflow: hidden;
+	z-index: -1;
 }
+
 .section.visible {
 	opacity: 1;
 	pointer-events: auto;
 	position: relative;
+	overflow: hidden;
+	z-index: 1;
 }

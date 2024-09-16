@@ -1,22 +1,24 @@
 .navBar {
-    width: 100%;
-    margin-top: 50px;
-    .navLink {
-        width: 100%;
-        gap: 20px;
-    }
+	width: 100%;
+	.navLink {
+		width: 100%;
+		gap: 20px;
+	}
 }
 
 .other-nav {
-   height: 40px;
-   margin-bottom: 50px;
+	height: 40px;
+	margin-bottom: 50px;
 }
 
 .dark-mode #navBar {
-    color: white !important;
+	color: white !important;
 }
 
-.other-nav {
-    display: flex;
-    justify-content: center;
+.navBar-other {
+	width: 100%;
+	.navLink {
+		width: 100%;
+		gap: 20px;
+	}
 }

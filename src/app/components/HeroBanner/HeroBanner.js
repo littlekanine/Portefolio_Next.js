@@ -1,7 +1,7 @@
 import { Moon, Sun, ArrowLeft, ArrowRight } from '../svgcomponent/SvgComponent.js';
 import NavBar from '../navBar/NavBar.js';
 
-function Herro({ darkMode, toggleDarkMode, handleNavClick }) {
+function Herro({ darkMode, toggleDarkMode, handleNavClick, visibleSection }) {
 	return (
 		<div>
 			<section id="hero" className={`jumbotron ${darkMode ? 'dark-mode' : ''}`}>
@@ -18,7 +18,7 @@ function Herro({ darkMode, toggleDarkMode, handleNavClick }) {
 						<br />
 						I'm a Web Developer.
 					</h1>
-					<NavBar darkMode={darkMode} handleNavClick={handleNavClick} />
+					<NavBar darkMode={darkMode} handleNavClick={handleNavClick} visibleSection={visibleSection} />
 				</div>
 			</section>
 		</div>
