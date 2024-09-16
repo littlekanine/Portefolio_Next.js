@@ -103,7 +103,14 @@ h2 {
 .section {
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
 }
 .section.visible {
 	opacity: 1;
+	pointer-events: auto;
+	position: relative;
 }

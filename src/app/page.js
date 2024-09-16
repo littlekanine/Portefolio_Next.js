@@ -9,24 +9,23 @@ import useDarkMode from '../scripts/darkMode';
 
 function Home() {
 	const [darkMode, toggleDarkMode] = useDarkMode();
-	const [visibleSection, setVisibleSection] = useState('top'); // Par défaut, on affiche "top"
+	const [visibleSection, setVisibleSection] = useState('top');
 
 	const handleNavClick = (section) => {
-		setVisibleSection(section); // Change la section visible quand on clique sur un lien
+		setVisibleSection(section);
 	};
 
 	return (
 		<div>
-			<div id="top" style={{ display: visibleSection === 'top' ? 'visible' : 'hidden' }}>
-				{/* Passe la fonction handleNavClick à Hero */}
+			<div id="top" className={`section ${visibleSection === 'top' ? 'visible' : ''}`}>
 				<Hero darkMode={darkMode} toggleDarkMode={toggleDarkMode} handleNavClick={handleNavClick} />
 			</div>
 
-			<div id="project" style={{ display: visibleSection === 'project' ? 'visible' : 'hidden' }}>
+			<div id="project" className={`section ${visibleSection === 'project' ? 'visible' : ''}`}>
 				<ResponsiveProjects darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 			</div>
 
-			<div id="contact" style={{ display: visibleSection === 'contact' ? 'visible' : 'hidden' }}>
+			<div id="contact" className={`section ${visibleSection === 'contact' ? 'visible' : ''}`}>
 				<ContactForm darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 			</div>
 		</div>
