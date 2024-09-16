@@ -66,6 +66,10 @@ h2 {
 	display: none;
 }
 
+.visible {
+	display: block;
+}
+
 .width-full {
 	width: 100%;
 }
@@ -96,7 +100,10 @@ h2 {
 	font-weight: bold;
 }
 
-.navLink a.active {
-	font-weight: bold;
-	color: #3498db; /* Exemple de couleur différente */
+.section {
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+.section.visible {
+	opacity: 1;
 }

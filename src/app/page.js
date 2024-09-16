@@ -17,16 +17,16 @@ function Home() {
 
 	return (
 		<div>
-			<div id="top" style={{ display: visibleSection === 'top' ? 'block' : 'none' }}>
+			<div id="top" style={{ display: visibleSection === 'top' ? 'visible' : 'hidden' }}>
 				{/* Passe la fonction handleNavClick à Hero */}
 				<Hero darkMode={darkMode} toggleDarkMode={toggleDarkMode} handleNavClick={handleNavClick} />
 			</div>
 
-			<div id="project" style={{ display: visibleSection === 'project' ? 'block' : 'none' }}>
+			<div id="project" style={{ display: visibleSection === 'project' ? 'visible' : 'hidden' }}>
 				<ResponsiveProjects darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 			</div>
 
-			<div id="contact" style={{ display: visibleSection === 'contact' ? 'block' : 'none' }}>
+			<div id="contact" style={{ display: visibleSection === 'contact' ? 'visible' : 'hidden' }}>
 				<ContactForm darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 			</div>
 		</div>
