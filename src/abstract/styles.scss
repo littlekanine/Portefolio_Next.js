@@ -1,25 +1,25 @@
-@import "../abstract/vendors/bootstrap";
+@import '../abstract/vendors/bootstrap';
 
-@import "./mixin";
-@import "./variables";
-@import "./helper";
+@import './mixin';
+@import './variables';
+@import './helper';
 
-@import "./base/base";
-@import "./base/typography";
+@import './base/base';
+@import './base/typography';
 
-@import "../app/components/buttons/buttons";
-@import "../app/components/project/projectDesktop/project";
+@import '../app/components/buttons/buttons';
+@import '../app/components/project/projectDesktop/project';
 
-@import "./layout/footer";
-@import "./layout/sections";
+@import './layout/footer';
+@import './layout/sections';
 
-@import "../app/about/about";
-@import "./sections/contact";
-@import "./sections/hero";
-@import "../app/components/navBar/navBar.scss";
-@import "../app/components/cardsStack/cardsStacks.scss";
-@import "../app/components/cardsStack/cardsStacks.scss";
-@import "../app/contactForm/contactForm.scss";
-@import "../app/components/project/projectMobile/projectMobile.scss";
-@import "../app/components/project/projectMobile/modalMobile/modalMobile.scss";
+@import '../app/about/about';
+@import './sections/contact';
+@import './sections/hero';
+@import '../app/components/navBar/navBar.scss';
+@import '../app/components/cardsStack/cardsStacks.scss';
+@import '../app/components/cardsStack/cardsStacks.scss';
+@import '../app/components/contactForm/contactForm.scss';
+@import '../app/components/project/projectMobile/projectMobile.scss';
+@import '../app/components/project/projectMobile/modalMobile/modalMobile.scss';
 // @import '../pages/error.scss';

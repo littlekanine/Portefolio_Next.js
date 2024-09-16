@@ -53,8 +53,8 @@ body,
 	opacity: 0;
 }
 
-.pointerEvents{
-	pointer-events: none
+.pointerEvents {
+	pointer-events: none;
 }
 
 h2 {
@@ -94,4 +94,9 @@ h2 {
 
 .bold {
 	font-weight: bold;
+}
+
+.navLink a.active {
+	font-weight: bold;
+	color: #3498db; /* Exemple de couleur différente */
 }
