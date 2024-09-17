@@ -2,36 +2,31 @@ import Buttons from '../buttons';
 import { ContactSvg, ArrowLeft, FolderSvg, GitHubSvg, LinkedinSvg, TwitterSvg } from '../svgcomponent/SvgComponent';
 
 const NavBar = ({ darkMode, handleNavClick, visibleSection }) => {
-	console.log('NavBar visibleSection:', visibleSection); // Débogage
-	console.log('handleNavClick:', handleNavClick); // Débogage
-	console.log('NavBar props:', { darkMode, handleNavClick, visibleSection });
-	const getButtonClass = () => {
-		return visibleSection === 'project' || visibleSection === 'contact' ? 'other-button' : 'animated-button';
+	const getButtonClass = (section) => {
+		return `animated-button ${visibleSection === section ? 'active' : ''} ${darkMode ? 'dark-mode' : ''}`;
 	};
 
 	const getNavButtons = () => {
-		const buttonClass = getButtonClass();
-
 		return (
 			<>
-				<a onClick={() => handleNavClick('project')} className={`${buttonClass} ${darkMode ? 'dark-mode' : ''}`}>
+				<a onClick={() => handleNavClick('project')} className={getButtonClass('project')}>
 					<Buttons message={'Projets'} FolderSvg={FolderSvg} SvgLeft={ArrowLeft} darkMode={darkMode} />
 				</a>
-				<a onClick={() => handleNavClick('contact')} className={`${buttonClass} ${darkMode ? 'dark-mode' : ''}`}>
+				<a onClick={() => handleNavClick('contact')} className={getButtonClass('contact')}>
 					<Buttons message={'Contact'} ContactSvg={ContactSvg} SvgLeft={ArrowLeft} darkMode={darkMode} />
 				</a>
-				<a rel="noreferrer" href="https://github.com/littlekanine" target="_blank" className={`${buttonClass} ${darkMode ? 'dark-mode' : ''}`}>
+				<a rel="noreferrer" href="https://github.com/littlekanine" target="_blank" className={getButtonClass('github')}>
 					<Buttons message={'Github'} GitHubSvg={GitHubSvg} SvgLeft={ArrowLeft} darkMode={darkMode} />
 				</a>
 				<a
 					rel="noreferrer"
 					href="https://www.linkedin.com/in/elia-kopff-16064b228/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=fr"
 					target="_blank"
-					className={`${buttonClass} ${darkMode ? 'dark-mode' : ''}`}
+					className={getButtonClass('linkedin')}
 				>
 					<Buttons message={'Linkedin'} LinkedinSvg={LinkedinSvg} SvgLeft={ArrowLeft} darkMode={darkMode} />
 				</a>
-				<a rel="noreferrer" href="https://x.com/K_D3828" target="_blank" className={`${buttonClass} ${darkMode ? 'dark-mode' : ''}`}>
+				<a rel="noreferrer" href="https://x.com/K_D3828" target="_blank" className={getButtonClass('twitter')}>
 					<Buttons message={'Twitter'} TwitterSvg={TwitterSvg} SvgLeft={ArrowLeft} darkMode={darkMode} />
 				</a>
 			</>

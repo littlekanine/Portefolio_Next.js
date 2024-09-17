@@ -1,6 +1,6 @@
 // Animate button about
 
-@mixin shared-button-styles($font-size) {
+@mixin shared-button-styles($font-size, $background-color, $color, $text-shadow) {
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -9,17 +9,18 @@
 	border: 4px solid;
 	border-color: transparent;
 	font-size: $font-size;
-	background-color: inherit;
+	background-color: $background-color;
 	border-radius: 100px;
 	font-weight: 600;
-	color: black;
-	box-shadow: 0 0 0 2px black;
+	color: $color;
+	box-shadow: 0 0 0 2px transparent;
 	cursor: pointer;
 	overflow: hidden;
 	transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 	animation: button 2s forwards;
 	animation-delay: 1s;
 	opacity: 0;
+	text-shadow: $text-shadow;
 
 	svg {
 		position: absolute;
@@ -138,11 +139,6 @@
 			height: 220px;
 			opacity: 1;
 		}
-	}
-
-	&:active {
-		scale: 0.95;
-		box-shadow: 0 0 0 4px #f7df1e;
 	}
 }
 
@@ -273,9 +269,13 @@
 }
 
 .animated-button {
-	@include shared-button-styles(16px);
+	@include shared-button-styles(16px, inherit, black, 2px 2px 4px rgba(0, 0, 0, 0.2));
 }
 
-.other-button {
-	@include shared-button-styles(10px);
+.animated-button.active {
+	@include shared-button-styles(16px, #ffffff73, black, 2px 2px 4px rgba(0, 0, 0, 0.2));
 }
+
+// .other-button {
+// 	@include shared-button-styles(10px, inherit);
+// }
