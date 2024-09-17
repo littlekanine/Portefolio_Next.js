@@ -2,10 +2,10 @@ import Buttons from '../buttons';
 import { ContactSvg, ArrowLeft, FolderSvg, GitHubSvg, LinkedinSvg, TwitterSvg } from '../svgcomponent/SvgComponent';
 
 const NavBar = ({ darkMode, handleNavClick, visibleSection }) => {
-	// Détermine la classe des boutons en fonction de la section visible
-	console.log(visibleSection);
+	console.log('NavBar visibleSection:', visibleSection); // Débogage
+	console.log('handleNavClick:', handleNavClick); // Débogage
+	console.log('NavBar props:', { darkMode, handleNavClick, visibleSection });
 	const getButtonClass = () => {
-		// Utilisation de 'other-button' pour 'project' et 'contact', sinon 'animated-button'
 		return visibleSection === 'project' || visibleSection === 'contact' ? 'other-button' : 'animated-button';
 	};
 

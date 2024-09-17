@@ -1,9 +1,9 @@
 import NavBar from '../navBar/NavBar';
 
-function ContactForm() {
+function ContactForm({ darkMode, handleNavClick, visibleSection }) {
 	return (
 		<div className="containerForm">
-			<NavBar />
+			<NavBar darkMode={darkMode} handleNavClick={handleNavClick} visibleSection={visibleSection} />
 			<div className="flex center align-center height80vh">
 				<form action="/submit-contact" method="post" className="flex center align-center column">
 					<p>Welcome</p>
