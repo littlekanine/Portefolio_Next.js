@@ -1,13 +1,9 @@
-import Buttons from '../buttons/index';
-import { ArrowRight, Enveloppe } from '../svgcomponent/SvgComponent';
 import NavBar from '../navBar/NavBar';
 
-function ContactForm({ visibleSection, darkMode, handleNavClick }) {
+function ContactForm() {
 	return (
 		<div className="containerForm">
-			<nav>
-				<NavBar darkMode={darkMode} handleNavClick={handleNavClick} visibleSection={visibleSection} />
-			</nav>
+			<NavBar />
 			<div className="flex center align-center height80vh">
 				<form action="/submit-contact" method="post" className="flex center align-center column">
 					<p>Welcome</p>

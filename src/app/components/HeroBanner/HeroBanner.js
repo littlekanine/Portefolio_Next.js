@@ -3,7 +3,7 @@ import NavBar from '../navBar/NavBar.js';
 
 function Herro({ darkMode, toggleDarkMode, handleNavClick, visibleSection }) {
 	return (
-		<div>
+		<div className="hero-mode width-full overflowHidden">
 			<section id="hero" className={`jumbotron ${darkMode ? 'dark-mode' : ''}`}>
 				<div className="animated-button toggle-button" onClick={toggleDarkMode}>
 					<button id="toggle-button" className="flex align-center center">

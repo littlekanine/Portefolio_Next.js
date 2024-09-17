@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import Hero from './components/HeroBanner/HeroBanner';
-import NavBar from './components/navBar/NavBar';
 import About from './about/page';
 import ContactForm from './components/contactForm/ContactForm';
 import ResponsiveProjects from './components/project/ResponsiveProjects';
@@ -19,7 +18,6 @@ function Home() {
 
 	return (
 		<div>
-			<NavBar darkMode={darkMode} handleNavClick={handleNavClick} visibleSection={visibleSection} />
 			<div id="hero" className={`section ${visibleSection === 'hero' ? 'visible' : ''}`}>
 				<Hero darkMode={darkMode} toggleDarkMode={toggleDarkMode} handleNavClick={handleNavClick} />
 			</div>

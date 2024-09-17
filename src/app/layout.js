@@ -36,6 +36,7 @@ export default function RootLayout({ children }) {
 					<p>You need to enable JavaScript to run this app.</p>
 					<p>If you are using a screen reader or other assistive technology, please enable JavaScript in your browser settings and reload the page.</p>
 				</noscript>
+
 				{children}
 			</body>
 		</html>
