@@ -1,9 +1,15 @@
 import NavBar from '../navBar/NavBar';
+import { Moon, Sun } from '../svgcomponent/SvgComponent.js';
 
-function ContactForm({ darkMode, handleNavClick, visibleSection }) {
+function ContactForm({ darkMode, handleNavClick, visibleSection, toggleDarkMode }) {
 	return (
 		<div className="containerForm">
 			<NavBar darkMode={darkMode} handleNavClick={handleNavClick} visibleSection={visibleSection} />
+			<div className="animated-button toggle-button" onClick={toggleDarkMode}>
+				<button id="toggle-button" className="flex align-center center">
+					{darkMode ? <Sun /> : <Moon />}
+				</button>
+			</div>
 			<div className="flex center align-center height80vh">
 				<form action="/submit-contact" method="post" className="flex center align-center column">
 					<p>Welcome</p>
