@@ -6,6 +6,7 @@ import IconMap from '../../iconMap/IconMap';
 
 function Projects({ darkMode }) {
 	const [expandedProjectId, setExpandedProjectId] = useState(null);
+	const [hoveredProjectId, setHoveredProjectId] = useState(null);
 
 	const handleProjectClick = (projectId) => {
 		setExpandedProjectId(projectId);
@@ -54,6 +55,7 @@ function Projects({ darkMode }) {
 								{ProjectsData.map((project) => {
 									const imagePath = project.img;
 									const isClicked = project.id === expandedProjectId;
+									const isHovered = project.id === hoveredProjectId;
 									console.log(imagePath)
 									return (
 										<div
@@ -62,6 +64,8 @@ function Projects({ darkMode }) {
 											}`}
 											key={project.id}
 											onClick={() => handleProjectClick(project.id)}
+											onMouseEnter={() => setHoveredProjectId(project.id)}
+											onMouseLeave={() => setHoveredProjectId(null)}
 											role="button"
 											tabIndex="0"
 											style={{ backgroundImage: `url(${imagePath})` }}
@@ -116,6 +120,11 @@ function Projects({ darkMode }) {
 													))}
 												</ul>
 											</div>
+											{isHovered && (
+												<div className="hover-message">
+													<p>{`${project.nom}`}</p>
+												</div>
+											)}
 										</div>
 									);
 								})}
