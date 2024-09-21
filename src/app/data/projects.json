@@ -2,8 +2,8 @@
 	{
 		"id": 1,
 		"nom": "Portefolio Sophie Bluel",
-		"img": "sophie-bluel.png",
-		"langages": ["html5", "css3", "react"],
+		"img": "/asset/img/sophie-bluel.png",
+		"langages": ["html5", "css3", "react", "js"],
 		"website": "https://master--sophieblueleliakopff.netlify.app/",
 		"gitHubSite": "https://github.com/littlekanine/P6_Sophie_Bluel",
 		"iconSite": "globe",
@@ -17,7 +17,7 @@
 	{
 		"id": 2,
 		"nom": "Kasa",
-		"img": "logoKasa.png",
+		"img": "/asset/img/logoKasa.png",
 		"langages": ["html5", "css3", "react"],
 		"website": "https://666417e6971505aa8c1bdad6--incomparable-tarsier-3f8a6f.netlify.app/",
 		"gitHubSite": "https://github.com/littlekanine/Projet_8_Kasa",
@@ -32,7 +32,7 @@
 	{
 		"id": 3,
 		"nom": "Argent-Bank",
-		"img": "bank-tree.jpeg",
+		"img": "/asset/img/bank-tree.jpeg",
 		"langages": ["html5", "css3", "react", "MongoDB"],
 		"website": "https://666419a9ca7ec3abceede856--stellar-mousse-031a0f.netlify.app/",
 		"gitHubSite": "https://github.com/littlekanine/P11_ARGENTBANK",

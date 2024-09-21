@@ -52,8 +52,9 @@ function Projects({ darkMode }) {
 						<div className="flex center align-center">
 							<div className="items flex section-project load-hidden" id="project-items">
 								{ProjectsData.map((project) => {
-									const imagePath = require(`../../../asset/img/${project.img}`);
+									const imagePath = project.img;
 									const isClicked = project.id === expandedProjectId;
+									console.log(imagePath)
 									return (
 										<div
 											className={`item ${isClicked ? 'clicked' : ''} ${

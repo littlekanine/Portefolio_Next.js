@@ -40,7 +40,7 @@ function ProjectsMobile({ darkMode }) {
             <h2 className="section-title section-title-project dark-blue-text section-title-project-mobile">Projects</h2>
             <Carousel>
                 {ProjectsData.map((project) => {
-                    const imagePath = require(`../../../asset/img/${project.img}`);
+                    const imagePath = project.img;
                     return (
                         <div className="carrousel section-project load-hidden" key={project.id}>
                             <div className="carrousel-list">

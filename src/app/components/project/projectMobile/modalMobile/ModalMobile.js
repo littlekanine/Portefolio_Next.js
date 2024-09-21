@@ -16,7 +16,7 @@ function Modal({ project, closeModal, darkMode }) {
 		}, 300); // Correspond à la durée de l'animation CSS
 	};
 
-	const imagePath = require(`../../../../asset/img/${project.img}`);
+	const imagePath = project.img;
 
 	useEffect(() => {
 		console.log('Dark mode is:', darkMode ? 'enabled' : 'disabled');
