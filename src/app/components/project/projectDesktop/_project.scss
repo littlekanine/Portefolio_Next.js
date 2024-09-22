@@ -327,10 +327,16 @@
 }
 
 .hover-message {
-	position: relative;
+	position: absolute;
+	bottom: -40px;
+	left: 50%;
+	white-space: nowrap;
+	transform: translateX(-50%);
+	// transition: 1s ease-in-out;
 	font-family: "Montserrat", sans-serif;
 	font-weight: bold;
 	color: white;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-	top: 235px;
+	// top: 235px;
+	z-index: 10;
 }

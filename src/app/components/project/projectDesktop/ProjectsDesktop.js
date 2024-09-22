@@ -41,7 +41,6 @@ function Projects({ darkMode }) {
 	}, [expandedProjectId]);
 
 	useEffect(() => {
-		// console.log('Dark mode is:', darkMode ? 'enabled' : 'disabled');
 	}, [darkMode]);
 
 	return (
