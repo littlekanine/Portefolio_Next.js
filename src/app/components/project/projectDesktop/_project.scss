@@ -269,11 +269,11 @@
 	}
 
 	.item.clicked {
-		position: fixed;
+		position: absolute;
 		top: 0%;
-		left: -70%;
+		left: 0%;
 		transform: translate(-50%, -50%);
-		width: 43vw;
+		width: 42vw;
 		height: 35vh;
 		filter: inherit;
 		z-index: 100;
@@ -308,6 +308,21 @@
 	}
 }
 
+.project-video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) !important;
+	width: 42vw;
+	object-fit: cover;
+	height: 35vh;
+	filter: inherit;
+	z-index: 100;
+	transform: none;
+	transform-origin: center center;
+	border-radius: 10px;
+}
+
 .text-hidden {
 	display: none;
 }
@@ -333,9 +348,9 @@
 	white-space: nowrap;
 	transform: translateX(-50%);
 	// transition: 1s ease-in-out;
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
-	color: white;
+	color: $dark-blue-text;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 	// top: 235px;
 	z-index: 10;

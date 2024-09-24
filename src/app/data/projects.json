@@ -1,48 +1,85 @@
 [
-    {
-        "id": 1,
-        "nom": "Portefolio Sophie Bluel",
-        "img": "/asset/img/sophie-bluel.png",
-        "langages": ["html5", "css3", "react", "js"],
-        "website": "https://master--sophieblueleliakopff.netlify.app/",
-        "gitHubSite": "https://github.com/littlekanine/P6_Sophie_Bluel",
-        "iconSite": "globe",
-        "gitHub": "gitHub",
-        "description": ["Gestion des événements utilisateurs avec JavaScript", "Manipulation des éléments du DOM avec JavaScript", "Récupération des données utilisateurs dans le JavaScript via des formulaires"]
-    },
-    {
-        "id": 2,
-        "nom": "Kasa",
-        "img": "/asset/img/logoKasa.png",
-        "langages": ["html5", "css3", "react"],
-        "website": "https://666417e6971505aa8c1bdad6--incomparable-tarsier-3f8a6f.netlify.app/",
-        "gitHubSite": "https://github.com/littlekanine/Projet_8_Kasa",
-        "iconSite": "globe",
-        "gitHub": "gitHub",
-        "description": ["Configuration de la navigation entre les pages de l'application avec React Router", "Développement des éléments de l'interface du site web grâce à des composants React", "Mise en œuvre des animations CSS"]
-    },
-    {
-        "id": 3,
-        "nom": "Argent-Bank",
-        "img": "/asset/img/bank-tree.jpeg",
-        "langages": ["html5", "css3", "react", "MongoDB"],
-        "website": "https://666419a9ca7ec3abceede856--stellar-mousse-031a0f.netlify.app/",
-        "gitHubSite": "https://github.com/littlekanine/P11_ARGENTBANK",
-        "iconSite": "globe",
-        "gitHub": "gitHub",
-        "description": ["Affichage des données du back end sur l'interface via des appels API", "Configuration des routes API pour la communication client / serveur", "Implémentation de la gestion des données avec Redux pour assurer le fonctionnement du front"]
-    },
 	{
-		"id": 4,
-		"nom": "724 Event",
+		"id": 1,
+		"nom": "Booki",
+		"img": "/asset/img/booki.jpg",
+		"langages": ["html5", "css3"],
+		"website": "https://master--sophieblueleliakopff.netlify.app/",
+		"gitHubSite": "https://github.com/littlekanine/P6_Sophie_Bluel",
+		"iconSite": "globe",
+		"gitHub": "gitHub",
+		"video": "/asset/video/bookivideo.mp4",
+		"description": ["Intégration d'une interface responsvive", "Création de composants HTML / CSS"]
+	},
+	{
+		"id": 2,
+		"nom": "OhMyFood",
+		"img": "/asset/img/Ohmyfood.jpg",
+		"langages": ["html5", "css3"],
+		"website": "https://master--sophieblueleliakopff.netlify.app/",
+		"gitHubSite": "https://github.com/littlekanine/P6_Sophie_Bluel",
+		"iconSite": "globe",
+		"gitHub": "gitHub",
+		"video": "/asset/video/ohmyfood.mp4",
+		"description": ["Intégaration de maquette en mobile first", "Réalisations d'animation css", "Utilisation de SASS"]
+	},
+	{
+		"id": 3,
+		"nom": "Portefolio Sophie Bluel",
 		"img": "/asset/img/sophie-bluel.png",
 		"langages": ["html5", "css3", "react", "js"],
 		"website": "https://master--sophieblueleliakopff.netlify.app/",
-		"gitHubSite": "https://github.com/littlekanine/P10_724event",
+		"gitHubSite": "https://github.com/littlekanine/P6_Sophie_Bluel",
 		"iconSite": "globe",
 		"gitHub": "gitHub",
+		"video": "/asset/video/sophieBluel.mp4",
 		"description": [
-			"Identification et resolution de bugs. Rédaction de test unitaire"
+			"Gestion des événements utilisateurs avec JavaScript",
+			"Manipulation des éléments du DOM avec JavaScript",
+			"Récupération des données utilisateurs dans le JavaScript via des formulaires"
 		]
+	},
+	{
+		"id": 4,
+		"nom": "Kasa",
+		"img": "/asset/img/logoKasa.png",
+		"langages": ["html5", "css3", "react"],
+		"website": "https://666417e6971505aa8c1bdad6--incomparable-tarsier-3f8a6f.netlify.app/",
+		"gitHubSite": "https://github.com/littlekanine/Projet_8_Kasa",
+		"iconSite": "globe",
+		"gitHub": "gitHub",
+		"video": "/asset/video/kasa.mp4",
+		"description": [
+			"Configuration de la navigation entre les pages de l'application avec React Router",
+			"Développement des éléments de l'interface du site web grâce à des composants React",
+			"Mise en œuvre des animations CSS"
+		]
+	},
+	{
+		"id": 5,
+		"nom": "Argent-Bank",
+		"img": "/asset/img/bank-tree.jpeg",
+		"langages": ["html5", "css3", "react", "MongoDB"],
+		"website": "https://666419a9ca7ec3abceede856--stellar-mousse-031a0f.netlify.app/",
+		"gitHubSite": "https://github.com/littlekanine/P11_ARGENTBANK",
+		"iconSite": "globe",
+		"gitHub": "gitHub",
+		"video": "/asset/video/argentbank.mp4",
+		"description": [
+			"Affichage des données du back end sur l'interface via des appels API",
+			"Configuration des routes API pour la communication client / serveur",
+			"Implémentation de la gestion des données avec Redux pour assurer le fonctionnement du front"
+		]
+	},
+	{
+		"id": 6,
+		"nom": "724 Event",
+		"img": "/asset/img/724event.png",
+		"langages": ["html5", "css3", "react", "js"],
+		"gitHubSite": "https://github.com/littlekanine/P10_724event",
+		"video": "/asset/video/724evnt_video.mp4",
+		"iconSite": "globe",
+		"gitHub": "gitHub",
+		"description": ["Identification et resolution de bugs à l'aide de React Developer Tools", "Rédaction du cahier des charges", "Rédaction de test unitaire"]
 	}
 ]

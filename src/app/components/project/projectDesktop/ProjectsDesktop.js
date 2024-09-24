@@ -40,22 +40,22 @@ function Projects({ darkMode }) {
 		};
 	}, [expandedProjectId]);
 
-	useEffect(() => {
-	}, [darkMode]);
+	useEffect(() => {}, [darkMode]);
 
 	return (
 		<div className="height100vh">
 			<section id="projects" className={`projects${darkMode ? ' dark-mode' : ''}`}>
 				<div className="container height-full">
 					<div className="project-wrapper height-full">
-						<h2 className="section-title dark-blue-text section-title-project">Projects</h2>
+						<h2 className="section-title dark-blue-text section-title-project">Projects Openclassroom 2023 - 2024</h2>
 						<div className="flex center align-center">
 							<div className="items flex section-project load-hidden" id="project-items">
 								{ProjectsData.map((project) => {
 									const imagePath = project.img;
+									const videoPath = project.video;
 									const isClicked = project.id === expandedProjectId;
 									const isHovered = project.id === hoveredProjectId;
-									console.log(imagePath)
+									console.log(imagePath);
 									return (
 										<div
 											className={`item ${isClicked ? 'clicked' : ''} ${
@@ -71,6 +71,14 @@ function Projects({ darkMode }) {
 											aria-label={project.nom}
 											data-project-id={project.id}
 										>
+											{isClicked ? (
+												<video autoPlay loop muted className="project-video">
+													<source src={videoPath} type="video/mp4" />
+													Votre navigateur ne supporte pas les vidéos HTML5.
+												</video>
+											) : (
+												<div className="project-image" style={{ backgroundImage: `url(${imagePath})` }} />
+											)}
 											<div className="project-info flex center align-center column" id="info">
 												<h2>Language used </h2>
 												<div className="language-icons flex center">
