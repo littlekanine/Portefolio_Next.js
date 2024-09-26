@@ -87,15 +87,15 @@ function ContactForm({ darkMode, handleNavClick, visibleSection, toggleDarkMode 
 	};
 
 	return (
-		<div className="containerForm">
+		<div className={darkMode ? 'dark-mode' : ''}>
 			<NavBar darkMode={darkMode} handleNavClick={handleNavClick} visibleSection={visibleSection} />
 			<div className="animated-button toggle-button" onClick={toggleDarkMode}>
 				<button id="toggle-button" className="flex align-center center">
 					{darkMode ? <Sun /> : <Moon />}
 				</button>
 			</div>
-			<div className="flex center align-center height80vh">
-				<form onSubmit={handleSubmit} className="flex center align-center column">
+			<div className="flex center align-center height90vh">
+				<form onSubmit={handleSubmit} className={`flex center align-center column ${darkMode ? 'dark-mode-form' : ''}`}>
 					<p>Welcome</p>
 					<div className="inputForm flex center column">
 						<div className="flex center align-center row">
@@ -143,11 +143,11 @@ function ContactForm({ darkMode, handleNavClick, visibleSection, toggleDarkMode 
 			</div>
 
 			<div className="drops">
-				<div className="drop drop-1"></div>
-				<div className="drop drop-2"></div>
-				<div className="drop drop-3"></div>
-				<div className="drop drop-4"></div>
-				<div className="drop drop-5"></div>
+				<div className={`drop drop-1 ${darkMode ? 'dark-mode-drop' : ''}`}></div>
+				<div className={`drop drop-2 ${darkMode ? 'dark-mode-drop' : ''}`}></div>
+				<div className={`drop drop-3 ${darkMode ? 'dark-mode-drop' : ''}`}></div>
+				<div className={`drop drop-4 ${darkMode ? 'dark-mode-drop' : ''}`}></div>
+				<div className={`drop drop-5 ${darkMode ? 'dark-mode-drop' : ''}`}></div>
 			</div>
 		</div>
 	);

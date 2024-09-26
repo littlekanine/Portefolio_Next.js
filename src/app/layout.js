@@ -1,5 +1,4 @@
 import { siteMetadata } from './metadata/metadata';
-import Footer from './footer/Footer';
 import '../abstract/styles.scss';
 
 export const metadata = {

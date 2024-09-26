@@ -256,7 +256,6 @@
 }
 
 .dark-mode .animated-button {
-	box-shadow: 0 0 0 2px white !important;
 	color: white !important;
 }
 
@@ -269,7 +268,7 @@
 }
 
 .dark-mode .animated-button svg {
-	fill: #f0f0f0;
+	fill: #f0f0f0 !important;
 }
 
 .animated-button {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Buttons({ type = 'button', message, SvgLeft, SvgRight, SvgEnvellope, SvgSun, SvgMoon, isToggle, darkMode, ContactSvg, FolderSvg, GitHubSvg, LinkedinSvg, TwitterSvg }) {
+function Buttons({ message, SvgLeft, SvgRight, SvgEnvellope, SvgSun, SvgMoon, isToggle, darkMode, ContactSvg, FolderSvg, GitHubSvg, LinkedinSvg, TwitterSvg }) {
 	return (
 		<div className="flex center align-center">
 			{SvgLeft && <SvgLeft className="arr-2" />}

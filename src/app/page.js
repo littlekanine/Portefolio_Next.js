@@ -18,8 +18,7 @@ function Home() {
 	console.log(visibleSection);
 
 	return (
-		<div>
-			{/* <NavBar darkMode={darkMode} handleNavClick={handleNavClick} visibleSection={visibleSection} /> */}
+		<div className={darkMode ? 'dark-mode' : ''}>
 			<div id="hero" className={`section ${visibleSection === 'hero' ? 'visible' : ''}`}>
 				<Hero darkMode={darkMode} toggleDarkMode={toggleDarkMode} handleNavClick={handleNavClick} visibleSection={visibleSection} />
 			</div>

@@ -10,7 +10,7 @@ function ResponsiveProjects({ darkMode, handleNavClick, visibleSection, toggleDa
 	const isTabletOrMobile = useMediaQuery({ query: '(max-width: 768px)' });
 
 	return (
-		<div>
+		<div className={`responsive-projects ${darkMode ? 'dark-mode' : ''}`}>
 			<NavBar darkMode={darkMode} handleNavClick={handleNavClick} visibleSection={visibleSection} />
 			<div className="animated-button toggle-button" onClick={toggleDarkMode}>
 				<button id="toggle-button" className="flex align-center center">
