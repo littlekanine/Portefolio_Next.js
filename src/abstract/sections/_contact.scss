@@ -7,8 +7,8 @@ body {
 
 form {
 	width: 80%;
-	background: $white;
-	padding: 0;
+	background: rgb(0 0 0 / 35%);
+	padding: 20px;
 	border-radius: 20px;
 	border-left: 1px solid $white;
 	backdrop-filter: blur(10px);
@@ -22,8 +22,6 @@ form {
 		color: #fff;
 		opacity: 0.7;
 		font-size: 1.4rem;
-		padding-top: 25px;
-		margin-bottom: 60px;
 		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 	}
 
@@ -65,7 +63,7 @@ form {
 
 	textarea {
 		background: transparent;
-		width: 33%;
+		width: 200%;
 		padding: 3em;
 		margin-bottom: 2em;
 		border: none;
@@ -80,6 +78,10 @@ form {
 		transition: all 0.2s ease-in-out;
 		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 		resize: none;
+	}
+
+	.input-error {
+		background-color: rgb(255 0 0 / 46%);
 	}
 }
 
@@ -106,6 +108,7 @@ form {
 		top: 220px;
 		left: 100px;
 		z-index: -1;
+		background: rgb(0 0 0 / 35%);
 	}
 
 	&-2 {
@@ -113,6 +116,7 @@ form {
 		width: 80px;
 		bottom: 60px;
 		right: 180px;
+		background: rgb(0 0 0 / 35%);
 	}
 
 	&-3 {
@@ -121,6 +125,7 @@ form {
 		bottom: 120px;
 		right: 50px;
 		z-index: -1;
+		background: rgb(0 0 0 / 35%);
 	}
 
 	&-4 {
@@ -128,6 +133,7 @@ form {
 		width: 120px;
 		top: 180px;
 		right: 60px;
+		background: rgb(0 0 0 / 35%);
 	}
 
 	&-5 {
@@ -136,6 +142,7 @@ form {
 		bottom: 170px;
 		left: 90px;
 		z-index: -1;
+		background: rgb(0 0 0 / 35%);
 	}
 }
 

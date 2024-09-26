@@ -22,6 +22,10 @@
 	opacity: 0;
 	text-shadow: $text-shadow;
 
+	.submit-button {
+		color: white;
+	}
+
 	svg {
 		position: absolute;
 		width: 24px;
@@ -276,6 +280,6 @@
 	@include shared-button-styles(16px, #ffffff73, black, 2px 2px 4px rgba(0, 0, 0, 0.2));
 }
 
-// .other-button {
-// 	@include shared-button-styles(10px, inherit);
-// }
+.animated-button-submit {
+	@include shared-button-styles(10px, rgb(0 0 0 / 30%), white, 2px 2px 4px rgba(0, 0, 0, 0.2));
+}
