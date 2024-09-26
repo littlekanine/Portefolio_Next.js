@@ -19,7 +19,7 @@ function Home() {
 
 	return (
 		<div className={darkMode ? 'dark-mode' : ''}>
-			<div id="hero" className={`section ${visibleSection === 'hero' ? 'visible' : ''}`}>
+			<div id="hero" className={` section ${visibleSection === 'hero' ? 'visible' : ''}`}>
 				<Hero darkMode={darkMode} toggleDarkMode={toggleDarkMode} handleNavClick={handleNavClick} visibleSection={visibleSection} />
 			</div>
 

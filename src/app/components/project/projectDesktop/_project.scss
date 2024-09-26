@@ -9,13 +9,15 @@
 	--transition: cubic-bezier(0.1, 0.7, 0, 1);
 }
 
-#projects {
+#project {
 	background-color: $white-color;
+}
+
+#projects {
 	color: $dark-blue-text;
-	margin-top: -10rem;
 	padding-top: 7.5rem;
 	padding-bottom: 7.5rem;
-	height: 100%;
+	height: 90vh;
 
 	@include respond(tab-land) {
 		margin-top: 0;
@@ -92,13 +94,13 @@
 	}
 }
 
-#projects .dark-mode {
-	background-color: black !important;
-	color: white !important;
+#project .dark-mode {
+	background-color: $dark-mode !important;
+	color: $white-color !important;
 }
 
 .dark-mode .section-title-project {
-	color: white !important;
+	color: $white-color !important;
 }
 
 .items {
@@ -347,11 +349,9 @@
 	left: 50%;
 	white-space: nowrap;
 	transform: translateX(-50%);
-	// transition: 1s ease-in-out;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
 	color: $dark-blue-text;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-	// top: 235px;
 	z-index: 10;
 }

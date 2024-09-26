@@ -94,7 +94,7 @@ function ContactForm({ darkMode, handleNavClick, visibleSection, toggleDarkMode 
 					{darkMode ? <Sun /> : <Moon />}
 				</button>
 			</div>
-			<div className="flex center align-center height90vh">
+			<div className="flex center align-center height100vh">
 				<form onSubmit={handleSubmit} className={`flex center align-center column ${darkMode ? 'dark-mode-form' : ''}`}>
 					<p>Welcome</p>
 					<div className="inputForm flex center column">

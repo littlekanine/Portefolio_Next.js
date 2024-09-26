@@ -256,7 +256,7 @@
 }
 
 .dark-mode .animated-button {
-	color: white !important;
+	color: $white-color !important;
 }
 
 .dark-mode .animated-button:hover {
@@ -268,7 +268,7 @@
 }
 
 .dark-mode .animated-button svg {
-	fill: #f0f0f0 !important;
+	fill: $white-color !important;
 }
 
 .animated-button {
@@ -276,7 +276,7 @@
 }
 
 .animated-button.active {
-	@include shared-button-styles(16px, #ffffff73, black, 2px 2px 4px rgba(0, 0, 0, 0.2));
+	@include shared-button-styles(16px, rgb(103 103 103 / 18%), black, 2px 2px 4px rgba(0, 0, 0, 0.2));
 }
 
 .animated-button-submit {

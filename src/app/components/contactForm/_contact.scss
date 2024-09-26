@@ -1,3 +1,11 @@
+#contact {
+	background-color: $white-color;
+}
+
+#contact .dark-mode {
+	background-color: $dark-mode !important;
+}
+
 form {
 	width: 80%;
 	background: rgb(0 0 0 / 35%);
