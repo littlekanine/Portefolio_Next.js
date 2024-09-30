@@ -45,7 +45,7 @@ function Projects({ darkMode }) {
 	return (
 		<div className="height100vh">
 			<section id="projects" className={`projects${darkMode ? ' dark-mode' : ''}`}>
-				<div className="container height-full">
+				<div className="container center height-full">
 					<div className="project-wrapper height-full">
 						<h2 className="section-title dark-blue-text section-title-project">Projects Openclassroom 2023 - 2024</h2>
 						<div className="flex center align-center">

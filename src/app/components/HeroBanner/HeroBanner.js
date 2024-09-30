@@ -10,11 +10,11 @@ function Herro({ darkMode, toggleDarkMode, handleNavClick, visibleSection }) {
 						{darkMode ? <Sun /> : <Moon />}
 					</button>
 				</div>
-				<div className="container">
+				<div className="container column">
 					<h1 className="hero-title load-hidden">
 						Welcome.
 						<br />
-						My name is <span className="text-color-main">Elia Kopff</span>
+						My name is <span className="text-color-main elia">Elia Kopff</span>
 						<br />
 						I'm a Web Developer.
 					</h1>

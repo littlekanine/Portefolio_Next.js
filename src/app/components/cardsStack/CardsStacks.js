@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import React, { useEffect } from 'react';
 import skillsData from '../../data/skills.json';
@@ -17,22 +17,19 @@ function CardsStack({ darkMode }) {
 		return chunkedArr;
 	};
 
-	const chunkedSkills = chunkArray(skillsData, 3);
+	const chunkedSkills = chunkArray(skillsData, 2);
 
-	useEffect(() => {
-		console.log('Dark mode is:', darkMode ? 'enabled' : 'disabled');
-	}, [darkMode]);
+	useEffect(() => {}, [darkMode]);
 
 	return (
 		<div className={`${darkMode ? ' dark-mode' : ''}`}>
 			<section className="card-section">
-				<h1 className="section-title">Skills</h1>
 				{chunkedSkills.map((row, rowIndex) => (
 					<div className="card-stack section-cardStacks load-hidden flex center align-center rowx" key={rowIndex}>
 						{row.map((skill, index) => (
 							<div className="card-contain flex center align-center bold" key={index}>
 								<div className="card flex center align-center">
-									<h2 className="title-stack">{skill.nom}</h2>
+									<h3 className="title-stack">{skill.nom}</h3>
 									<FontAwesomeIcon key={index} icon={IconMap[skill.logo]} className="icons-skill " />
 									<div className="progress-bar flex center align-center">
 										<div className="progress skills-progress load-hidden" style={{ width: getProgressWidth(skill.niveaux) }}></div>

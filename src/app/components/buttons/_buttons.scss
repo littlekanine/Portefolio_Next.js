@@ -67,9 +67,23 @@
 		left: 72%;
 	}
 
+	.aboutSvg {
+		left: 72%;
+		width: 18px;
+	}
+
 	.moon {
 		position: none !important;
 		height: 20px;
+	}
+
+	.fileSvg {
+		left: 80%;
+		fill: $white-color;
+	}
+
+	.dark-mode .fileSvg {
+		fill: $dark-blue-text;
 	}
 
 	.circle {
@@ -127,6 +141,14 @@
 		}
 
 		.twitterSvg {
+			left: 120%;
+		}
+
+		.aboutSvg {
+			left: 120%;
+		}
+
+		.fileSvg {
 			left: 120%;
 		}
 
@@ -281,4 +303,15 @@
 
 .animated-button-submit {
 	@include shared-button-styles(10px, rgb(0 0 0 / 30%), white, 2px 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.animated-button-Cv {
+	color: $white-color;
+	background-color: $dark-blue-text !important;
+	@include shared-button-styles(10px, rgb(0 0 0 / 30%), $white-color, 2px 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.dark-mode .animated-button-Cv {
+	color: $dark-blue-text !important;
+	background-color: $white-color !important;
 }

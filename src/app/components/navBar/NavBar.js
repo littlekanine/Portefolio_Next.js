@@ -1,5 +1,5 @@
 import Buttons from '../buttons';
-import { ContactSvg, ArrowLeft, FolderSvg, GitHubSvg, LinkedinSvg, TwitterSvg } from '../svgcomponent/SvgComponent';
+import { ContactSvg, ArrowLeft, FolderSvg, GitHubSvg, LinkedinSvg, TwitterSvg, AboutSvg } from '../svgcomponent/SvgComponent';
 
 const NavBar = ({ darkMode, handleNavClick, visibleSection }) => {
 	const getButtonClass = (section) => {
@@ -9,6 +9,9 @@ const NavBar = ({ darkMode, handleNavClick, visibleSection }) => {
 	const getNavButtons = () => {
 		return (
 			<>
+				<a onClick={() => handleNavClick('about')} className={getButtonClass('about')}>
+					<Buttons message={'About'} AboutSvg={AboutSvg} SvgLeft={ArrowLeft} darkMode={darkMode} />
+				</a>
 				<a onClick={() => handleNavClick('project')} className={getButtonClass('project')}>
 					<Buttons message={'Projets'} FolderSvg={FolderSvg} SvgLeft={ArrowLeft} darkMode={darkMode} />
 				</a>
