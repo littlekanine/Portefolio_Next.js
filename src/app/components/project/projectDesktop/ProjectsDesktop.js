@@ -77,7 +77,7 @@ function Projects({ darkMode }) {
 													Votre navigateur ne supporte pas les vidéos HTML5.
 												</video>
 											) : (
-												<div className="project-image" style={{ backgroundImage: `url(${imagePath})` }} />
+												<div className="project-image" style={{ backgroundImage: `url(${imagePath}), hidden` }} />
 											)}
 											<div className="project-info flex center align-center column" id="info">
 												<h2>Language used </h2>

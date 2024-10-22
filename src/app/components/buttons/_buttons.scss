@@ -40,7 +40,6 @@
 
 	.arr-2 {
 		left: -25%;
-		// transform: rotate(90deg);
 	}
 
 	.enveloppe {
@@ -93,7 +92,7 @@
 		transform: translate(-50%, -50%);
 		width: 20px;
 		height: 20px;
-		background-color: #f7de1eb5;
+		background-color: $dark-blue-text;
 		backdrop-filter: blur(5px);
 		border-radius: 50%;
 		opacity: 0;
@@ -114,10 +113,12 @@
 
 		.arr-1 {
 			right: -25%;
+			// fill: $white-color;
 		}
 
 		.arr-2 {
 			left: 16px;
+			fill: $white-color;
 		}
 
 		.enveloppe {
@@ -154,6 +155,7 @@
 
 		.text {
 			transform: translateX(12px);
+			color: $white-color;
 		}
 
 		svg {
@@ -281,11 +283,15 @@
 	color: $white-color !important;
 }
 
+.dark-mode .circle {
+	background-color: transparent !important;
+}
+
 .dark-mode .animated-button:hover {
 	box-shadow: none !important;
 	color: black !important;
 	& svg {
-		fill: black !important;
+		fill: $white-color !important;
 	}
 }
 
@@ -314,4 +320,77 @@
 .dark-mode .animated-button-Cv {
 	color: $dark-blue-text !important;
 	background-color: $white-color !important;
+}
+
+@media only screen and (max-width: 767px) {
+	.animated-button {
+		@include shared-button-styles(10px, inherit, black, 2px 2px 4px rgba(0, 0, 0, 0.2));
+		font-size: 12px;
+		padding: 8px 18px;
+	}
+
+	.animated-button svg {
+		width: 18px;
+		height: 18px;
+	}
+
+	.arr-1 {
+		// right: 16px;
+		display: none;
+	}
+
+	.arr-2 {
+		// left: -25%;
+		display: none;
+	}
+
+	.enveloppe {
+		// left: -25%;
+		display: none;
+	}
+
+	.contactSvg {
+		// left: 72%;
+		display: none;
+	}
+
+	.folderSvg {
+		// left: 72%;
+		display: none;
+	}
+
+	.gitHubSvh {
+		// left: 72%;
+		display: none;
+	}
+
+	.linkedinSvg {
+		// left: 72%;
+		display: none;
+	}
+
+	.twitterSvg {
+		// left: 72%;
+		display: none;
+	}
+
+	.aboutSvg {
+		// left: 72%;
+		width: 18px;
+		display: none;
+	}
+
+	.moon {
+		position: none !important;
+		height: 20px;
+	}
+
+	.circle {
+		width: 80px;
+		height: 80px;
+	}
+
+	.text {
+		font-size: 10.5px;
+	}
 }
