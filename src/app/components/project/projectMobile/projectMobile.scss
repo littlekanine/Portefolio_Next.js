@@ -5,12 +5,11 @@
 .carousel-container {
 	position: relative;
 	width: 100%;
-	overflow: hidden;
+	// overflow: hidden;
 }
 
 .carousel-item {
 	margin-right: 0 !important;
-	width: 80%;
 	position: relative;
 	transition: transform 0.5s ease-in-out;
 }
@@ -41,4 +40,23 @@
 	height: 50%;
 	object-fit: cover;
 	border-radius: 10px;
+	box-shadow: 14px 18px 24px -5px rgba(0, 0, 0, 0.85);
+
+}
+
+.dots-container {
+	gap : 5px;
+	flex-direction : row;
+	padding-top : 10px;
+}
+
+.dot {
+	width : 10px;
+	height : 10px;
+	border-radius : 100px;
+	background-color : grey;
+}
+
+.dot .active {
+	background-color : red !important;
 }
