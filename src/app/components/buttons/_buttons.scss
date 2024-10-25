@@ -326,12 +326,16 @@
 	.animated-button {
 		@include shared-button-styles(10px, inherit, black, 2px 2px 4px rgba(0, 0, 0, 0.2));
 		font-size: 12px;
-		padding: 8px 18px;
+		padding: 1px 12px !important;
 	}
 
 	.animated-button svg {
 		width: 18px;
 		height: 18px;
+	}
+
+	.animated-button .text {
+		font-size: smaller;
 	}
 
 	.arr-1 {

@@ -16,4 +16,56 @@
 			gap: 0px;
 		}
 	}
+	/* Menu burger en version mobile */
+	.menu-button {
+		font-size: 24px;
+		background: none;
+		border: none;
+		cursor: pointer;
+		color: inherit;
+		padding-left: 10px;
+	}
+
+	.dropdown-menu {
+		border: none;
+		background-color: $white-color;
+		width: auto;
+		position: absolute;
+		top: 30px;
+		left: 0;
+		z-index: 10;
+		padding: 10px;
+	}
+
+	.dropdown-menu a {
+		padding: 10px;
+		width: 100%;
+		text-align: center;
+	}
+
+	/* Masquer les SVG sur mobile */
+	@media (max-width: 767px) {
+		.menu-button {
+			display: block;
+		}
+
+		.hero-cta {
+			display: none;
+		}
+
+		.dropdown-menu {
+			display: flex;
+		}
+	}
+
+	/* Version normale pour grand écran */
+	@media (min-width: 768px) {
+		.menu-button {
+			display: none;
+		}
+
+		.dropdown-menu {
+			display: none;
+		}
+	}
 }
