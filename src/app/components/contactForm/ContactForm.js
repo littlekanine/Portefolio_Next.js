@@ -106,7 +106,7 @@ function ContactForm({ darkMode, handleNavClick, visibleSection, toggleDarkMode 
 								placeholder="Name"
 								value={formData.name}
 								onChange={handleInputChange}
-								className={errors.name ? 'input-error' : ''}
+								className={`${errors.name ? 'input-error' : ''} ${darkMode ? 'dark-mode-input' : ''}`}
 							/>
 						</div>
 						<div className="flex center align-center row">
@@ -117,7 +117,7 @@ function ContactForm({ darkMode, handleNavClick, visibleSection, toggleDarkMode 
 								placeholder="Email"
 								value={formData.email}
 								onChange={handleInputChange}
-								className={errors.email ? 'input-error' : ''}
+								className={`${errors.name ? 'input-error' : ''} ${darkMode ? 'dark-mode-input' : ''}`}
 							/>
 						</div>
 					</div>
@@ -129,7 +129,7 @@ function ContactForm({ darkMode, handleNavClick, visibleSection, toggleDarkMode 
 							name="story"
 							rows="5"
 							cols="33"
-							className="flex center align-center"
+							className={`flex center align-center ${darkMode ? 'dark-mode-input' : ''}`}
 							value={formData.story}
 							onChange={handleInputChange}
 						></textarea>
@@ -140,14 +140,6 @@ function ContactForm({ darkMode, handleNavClick, visibleSection, toggleDarkMode 
 					</button>
 					{emailSent && <p className="success-message">Your message has been sent successfully!</p>}
 				</form>
-			</div>
-
-			<div className="drops">
-				<div className={`drop drop-1 ${darkMode ? 'dark-mode-drop' : ''}`}></div>
-				<div className={`drop drop-2 ${darkMode ? 'dark-mode-drop' : ''}`}></div>
-				<div className={`drop drop-3 ${darkMode ? 'dark-mode-drop' : ''}`}></div>
-				<div className={`drop drop-4 ${darkMode ? 'dark-mode-drop' : ''}`}></div>
-				<div className={`drop drop-5 ${darkMode ? 'dark-mode-drop' : ''}`}></div>
 			</div>
 		</div>
 	);

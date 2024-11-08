@@ -12,12 +12,12 @@ const About = ({ darkMode, handleNavClick, visibleSection, toggleDarkMode }) => 
 					{darkMode ? <Sun /> : <Moon />}
 				</button>
 			</div>
-			<div className="flex">
+			<div className="flex respond-about">
 				<div className="left-side ">
 					<img src="../asset/img/mwa.jpg" alt="Votre Nom" />
 					<div className={`blur-effect ${darkMode ? 'dark-mode' : ''}`}></div>
 				</div>
-				<div className="right-side flex column align-center">
+				<div className={`right-side flex column align-center ${darkMode ? 'dark-mode' : ''}`}>
 					<h1 className={`${darkMode ? 'dark-mode' : ''}`}>A Propos de Moi</h1>
 					<p>
 						Après six années d'expérience dans la restauration, j'ai décidé de me réorienter vers le développement web. Actuellement en formation de Développeur
