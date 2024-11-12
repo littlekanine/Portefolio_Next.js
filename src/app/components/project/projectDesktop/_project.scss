@@ -281,6 +281,18 @@
 		z-index: 100;
 		transform: none;
 		transform-origin: center center;
+
+		@media (max-width: 1200px) {
+			left: 5%;
+		}
+
+		@media (max-width: 1000px) {
+			left: 10%;
+		}
+
+		@media (max-width: 820px) {
+			left: 15%;
+		}
 	}
 	.icons {
 		color: #f7df1e;

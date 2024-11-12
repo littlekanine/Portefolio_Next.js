@@ -4,12 +4,12 @@ import { ContactSvg, ArrowLeft, FolderSvg, GitHubSvg, LinkedinSvg, TwitterSvg, A
 import Herro from '../HeroBanner/HeroBanner';
 
 const NavBar = ({ darkMode, handleNavClick, visibleSection }) => {
-	const [isMobile, setIsMobile] = useState(window.innerWidth < 767);
+	const [isMobile, setIsMobile] = useState(window.innerWidth < 810);
 	const [menuOpen, setMenuOpen] = useState(false);
 
 	useEffect(() => {
 		const handleResize = () => {
-			setIsMobile(window.innerWidth < 767);
+			setIsMobile(window.innerWidth < 810);
 		};
 
 		window.addEventListener('resize', handleResize);
@@ -65,7 +65,7 @@ const NavBar = ({ darkMode, handleNavClick, visibleSection }) => {
 						<button onClick={toggleMenu} className="menu-button flex">
 							☰
 						</button>
-						{menuOpen && <div className="dropdown-menu flex center align-center column">{getNavButtons()}</div>}
+						{menuOpen && <div className={`dropdown-menu flex center align-center column ${menuOpen ? 'show' : ''}`}>{getNavButtons()}</div>}
 					</div>
 				</>
 			) : (

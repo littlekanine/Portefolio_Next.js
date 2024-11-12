@@ -36,6 +36,9 @@
 
 	.arr-1 {
 		right: 16px;
+		@include respond(phone) {
+			right: 0%;
+		}
 	}
 
 	.arr-2 {
@@ -156,6 +159,10 @@
 		.text {
 			transform: translateX(12px);
 			color: $white-color;
+
+			@media only screen and (max-width: 810px) {
+				transform: none;
+			}
 		}
 
 		svg {
@@ -301,6 +308,9 @@
 
 .animated-button {
 	@include shared-button-styles(16px, inherit, black, 2px 2px 4px rgba(0, 0, 0, 0.2));
+	// @include respond(phone-xs) {
+	// 	width: 50%;
+	// }
 }
 
 .animated-button.active {
@@ -322,7 +332,7 @@
 	background-color: $white-color !important;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 810px) {
 	.animated-button {
 		@include shared-button-styles(10px, inherit, black, 2px 2px 4px rgba(0, 0, 0, 0.2));
 		font-size: 12px;
@@ -339,47 +349,38 @@
 	}
 
 	.arr-1 {
-		// right: 16px;
 		display: none;
 	}
 
 	.arr-2 {
-		// left: -25%;
 		display: none;
 	}
 
 	.enveloppe {
-		// left: -25%;
 		display: none;
 	}
 
 	.contactSvg {
-		// left: 72%;
 		display: none;
 	}
 
 	.folderSvg {
-		// left: 72%;
 		display: none;
 	}
 
 	.gitHubSvh {
-		// left: 72%;
 		display: none;
 	}
 
 	.linkedinSvg {
-		// left: 72%;
 		display: none;
 	}
 
 	.twitterSvg {
-		// left: 72%;
 		display: none;
 	}
 
 	.aboutSvg {
-		// left: 72%;
 		width: 18px;
 		display: none;
 	}

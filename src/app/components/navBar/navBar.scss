@@ -1,16 +1,12 @@
 .navBar {
 	width: 100%;
-	.navLink {
-		width: 100%;
-		gap: 20px;
-	}
 }
 
 .dark-mode #navBar {
 	color: white !important;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 810px) {
 	.navBar {
 		.navLink {
 			gap: 0px;
@@ -28,13 +24,14 @@
 
 	.dropdown-menu {
 		border: none;
-		background-color: $white-color;
+		background-color: transparent;
 		width: auto;
 		position: absolute;
 		top: 30px;
 		left: 0;
 		z-index: 10;
 		padding: 10px;
+		transition: opacity 0.3s ease;
 	}
 
 	.dropdown-menu a {
@@ -44,7 +41,7 @@
 	}
 
 	/* Masquer les SVG sur mobile */
-	@media (max-width: 767px) {
+	@media (max-width: 810px) {
 		.menu-button {
 			display: block;
 		}
@@ -59,7 +56,7 @@
 	}
 
 	/* Version normale pour grand écran */
-	@media (min-width: 768px) {
+	@media (min-width: 810px) {
 		.menu-button {
 			display: none;
 		}

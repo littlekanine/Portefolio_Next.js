@@ -8,7 +8,7 @@
 
 form {
 	width: 80%;
-	background: rgb(0 0 0 / 35%);
+	background: rgb(0 0 0 / 23%);
 	padding: 20px;
 	border-radius: 20px;
 	backdrop-filter: blur(10px);
@@ -70,6 +70,14 @@ form {
 		transition: all 0.2s ease-in-out;
 		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 		resize: none;
+
+		@include respond(tab-port-sm) {
+			width: 120%;
+		}
+
+		@include respond(phone-xs) {
+			width: 100%;
+		}
 	}
 
 	textarea:focus {
@@ -109,7 +117,7 @@ input:focus {
 
 .dark-mode-form {
 	background-color: #ffffff99;
-	color:black;
+	color: black;
 }
 
 .dark-mode-drop {

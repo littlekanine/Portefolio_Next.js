@@ -22,18 +22,21 @@ function CardsStack({ darkMode }) {
 	useEffect(() => {}, [darkMode]);
 
 	return (
-		<div className={`${darkMode ? ' dark-mode' : ''}`}>
+		<div className={`${darkMode ? 'dark-mode' : ''}`}>
 			<section className="card-section">
 				{chunkedSkills.map((row, rowIndex) => (
 					<div className="card-stack section-cardStacks load-hidden flex center align-center rowx" key={rowIndex}>
 						{row.map((skill, index) => (
-							<div className="card-contain flex center align-center bold" key={index}>
-								<div className="card flex center align-center">
+							<div className="card-container" key={index}>
+								<div className="card-front">
 									<h3 className="title-stack">{skill.nom}</h3>
-									<FontAwesomeIcon key={index} icon={IconMap[skill.logo]} className="icons-skill " />
+									<FontAwesomeIcon icon={IconMap[skill.logo]} className="icons-skill" />
 									<div className="progress-bar flex center align-center">
 										<div className="progress skills-progress load-hidden" style={{ width: getProgressWidth(skill.niveaux) }}></div>
 									</div>
+								</div>
+								<div className="card-back">
+									<h3 className="niveau">{skill.niveaux}</h3>
 								</div>
 							</div>
 						))}
